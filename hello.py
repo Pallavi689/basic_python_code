@@ -8,19 +8,19 @@
 #           sum=sum+i
 #      i=i+1
 # print('sum of 5 even number : ',sum)
-#
-#
-#
+
+
+
 # wap to find sum of digits of a given number like 123=1+2+3=6
 # i=int(input('enter a number :'))
 # n=0
 # while(i>0):
 #     n=n+i%10
-#     i=i//10            #(.) hatane ke liye
+#     i=i//10            #to remove(.) use //
 # print(n)
-#
-#
-#
+
+
+
 #123=1^2+2^2+3^2=14
 # i=int(input('enter a number :'))
 # n=0
@@ -28,17 +28,17 @@
 #     n=n+(i%10)**2
 #     i=i//10
 # print(n)
-#
-#
-#
+
+
+
 # wap to find the area of triangle
 # h=int(input('enter height :'))
 # b=int(input('enter base :'))
 # a=h*b/2
 # print('area of triangle : ',a)
-#
-#
-#
+
+
+
 #wap to find x
 # import math
 #
@@ -204,19 +204,6 @@
 #     print('given number {} is not armstrong number '.format(n))
 
 
-#find armstrong number bw an interval                                    check
-# n = int(input('enter a starting value :'))
-# m = int(input('enter ending value :'))
-# temp=0
-# for num in range(n,m+1):
-#     sum=0
-#     temp==num
-#     while(temp>0):
-#         d = temp % 10
-#         sum+=d**3
-#         temp//=10
-#         if(num==sum):
-#             print(num)
 
 
 #sum of all natural numbers
@@ -300,26 +287,7 @@
 # op1=(input('enter operator : '))
 # getvalue(x1,y1,op1)
 
-#check if the given number disarium number
-#ex 175=1^1+7^2+5^3=175
-n=int(input('enter a number : '))
-m=n
-len1=0
-while(n!=0):
-    len1+=1
-    n//=10
-print(len1)
-len2=len1
-sum=d=0
-while(n>0):
-    d=n%10
-    sum+=d**len2       # because d hase 5 and 5 in a last so we calculate as a 5^3
-    n//=10          #and a value of length =3 then 3-1=2 1 etc..
-    len2 -= 1
-if(sum==m):
-    print('true')
-else:
-    print('false')
+
 
 
 
