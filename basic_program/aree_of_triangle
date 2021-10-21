@@ -1,0 +1,5 @@
+#wap to find the area of triangle
+h=int(input('enter height :'))
+b=int(input('enter base :'))
+a=h*b/2
+print('area of triangle : ',a)
