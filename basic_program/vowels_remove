@@ -1,0 +1,18 @@
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+# remove A, E, I, O, U from the inputted word
+user = input('enter a word : ')
+user = user.upper()
+
+for letter in user:
+    if letter == 'A':
+        continue
+    elif letter == 'E':
+        continue
+    elif letter == 'I':
+        continue
+    elif letter == 'O':
+        continue
+    elif letter == 'U':
+        continue
+    print(letter)
