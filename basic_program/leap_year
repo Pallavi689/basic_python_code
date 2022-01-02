@@ -14,7 +14,7 @@ else:
 		
 
 
-# to check leap year and maching tha result
+# to check leap year and matching tha result
 def is_year_leap(year):
 	if year % 4 != 0:
 		return False
