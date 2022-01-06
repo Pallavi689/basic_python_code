@@ -1,0 +1,66 @@
+# Divisibility by Product/Sum of Digits
+# Problem statement
+# You are given an array of positive integers, arr, of size array_length. How any elements in arr are perfectly divisible by either the product or the sum of their digits?
+# Example 1
+# Input
+# 1 303
+# Output
+# 0
+# Explanation
+# Sum of digits of 303 = 6, the product of digits of
+# 303 = 9
+# 303 is not divisible by 6 or 9, hence the output is
+# 0.
+# Example 2
+# Input
+# 2
+# 14
+# 7
+# Output
+# 1
+# Explanation
+# arr contains two elements, 14 and 7 Sum of digits of 14 = 5, product of digits of 14 = 4
+# 14 is not divisible by 5 or 4. Sum of digits of 7 = 7. Product of digits of 7 = 7
+# 7 is divisible by 7
+
+
+#solution
+
+
+n = int(input('how many numbers you input : '))
+arr_length = []
+arr_length1 = []
+for i in range(0, n):
+    arr = int(input('enter a number : '))
+    arr_length.append(arr)
+    arr_length1.append(arr)
+# for i in range(0, n):
+#     print(arr_length[i])
+# arr_length1 = arr_length
+Snum = 0
+product = 1
+count = 0
+for i in range(0, n):
+    if arr_length[i] == 0:
+        print('value no ',i+1,'is 0 not allow')
+        continue
+    m = len(str(arr_length[i]))
+    for j in range(0, m):
+        rem = arr_length[i] % 10
+        Snum += rem
+        # if rem == 0:
+        #     continue
+        # product *= rem
+        arr_length[i] = arr_length[i]//10
+        if rem == 0:
+            continue
+        product *= rem
+    # print('sum of ',arr_length1[i],':', Snum)
+    # print('product fo' ,arr_length1[i],':', product)
+    if arr_length1[i] % Snum == 0 or arr_length1[i] % product == 0:
+        count += 1
+    Snum = 0
+    product = 1
+print('output : ',count)
+
+
