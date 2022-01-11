@@ -1,0 +1,30 @@
+# Sample Input
+
+# 2
+# Hacker
+# Rank
+# Sample Output
+
+# Hce akr   // even odd
+# Rn ak
+
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s = int(input())
+a = []
+for i in range(s):
+    i = int(0)
+    b = input()
+    a.append(b)
+for i in range(len(a)):
+    b =list(a[i])
+    c = []
+    c1 = []
+    for j in range(len(b)):
+        if j == 0 or j % 2 == 0:
+            c.append(b[j])
+        else:
+            c1.append(b[j])
+    print(''.join(c),''.join(c1))
+    
